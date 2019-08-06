@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+ 
+}
+html,
+body{
+    height: 100%;
+    
+}
+#zhifubao{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    .zfb-header{
+        height: 155px;
+        background: #3f454f;
+        display: flex;
+        flex-direction: column;
+      
+        .list1{
+            height: 30px;
+            flex: 1;
+            // background: olive;
+            display: flex; 
+          li{
+              flex: 1;
+              display: flex;
+              align-items: center;
+              color: #fff;
+              span{
+                  font-size: 10px;
+              }
+          }
+          li:nth-child(1){
+              flex: 6;
+              margin-left: 16px;
+          }
+        }
+        .list2{
+            height: 240px;
+            flex: 3;
+            display: flex;
+
+            li{
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+               span{
+                  
+                   font-size: 14px;
+                   margin-top: 15px;
+               }
+            }
+        }
+
+    }
+    .zfb-main{
+        flex: 1;
+        background: #fff;
+        .list3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // box-sizing: border-box;
+            
+           
+            li{
+                width: 90px;
+                height: 90px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #e6e6e6;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+            
+                span{
+                    margin-top: 12px;
+                    color: #555555;
+                }
+            }
+        }
+    }
+    .zfb-footer{
+        height: 50px;
+        background: #fff;
+        ul{
+            display: flex;
+            padding-top: 7px;
+         
+            li{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                align-items: center;
+               
+                span{
+                    font-size: 9px;
+                    margin-top: 5px;
+                    color: #939393;
+                    
+                }
+            }
+        }
+        
+    }
+}

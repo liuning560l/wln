@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        width: 100%;
+        height: 160px;
+        flex-direction: column;
+
+        .box1 {
+            width: 100%;
+            height: 132px;
+            background-color: #e67e22;
+            background: url(../images/01.png) no-repeat center;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 28px;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 2px solid #ebebeb;
+
+       ul {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       li {
+           // display: flex;   
+             align-items: center;
+           // width: 80px;
+              margin-left: 10px;
+              height: 28px;
+              color: #505050;
+              font-size: 12px;
+              a {
+                  display: block;
+                  height: 80%;
+                  text-align: center;
+              }
+               :hover {
+                   color: #e67e22;
+                   border-bottom: 1px solid #e67e22;
+                   display: block;
+                  }
+              }
+          }
+      }
+
+    }
+
+    main {
+        width: 100%;
+        flex: 1;
+        background: #ebebeb;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .a {
+            width: 40%;
+            height: 100%;        
+            // overflow: hidden;
+            ul {
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    height: 204px;
+                    width: 100%;
+                    margin-right: 15px;
+                    margin-top: 15px;
+                    background: #fff;
+
+                    h2 {
+                        font-size: 17px;
+                        color: #303030;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 17px;
+                        padding-top: 18px;
+                        // margin-left: 17px;
+                    }
+
+                    .pp {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+
+                    .p1 {
+                        font-size: 6px;
+                        color: #959595;
+                    }
+
+                    .p2 {
+                        font-size: 6px;
+                        color: #e67e22;
+                    }
+
+                    .p3 {
+                        font-size: 5px;
+                        color: #959595;
+                    }
+
+                    .p4 {
+                        font-size: 9px;
+                        color: #444443;
+                        padding-left: 17px;
+                        padding-right: 20px;
+                        line-height: 15px;
+                        margin-top: 21px;
+                    }
+
+                    .p5 {
+                        width: 43px;
+                        height: 18px;
+                        font-size: 6px;
+                        color: #fff;
+                        background: #e67e22;
+                        margin-top: 13px;
+                        margin-left: 17px;
+
+                    }
+
+                    .a1 {
+                        width: 100%;
+                        height: 100%;
+                        border-bottom: 1px solid #ebebeb;
+                        margin-top: -190px;
+                    }
+                }
+
+                .li-1 {
+                    width: 100%;
+                    height: 449px;
+
+                    //  height: 389px;
+                    // margin-left: 0px;
+                    .im {
+                        width: 80%;
+                        height: 50%;
+                        // text-align: center; 
+                        margin-left: 40px;
+                        margin-top: 18px;
+                    }
+
+                    .p4 {
+                        padding-left: 17px;
+                        padding-right: 20px;
+                    }
+
+                    .p5 {
+                        margin-left: 4%;
+                    }
+
+
+                }
+            }
+        }
+
+
+
+
+        .b {
+            width: 20%;
+            margin-left: 15px;
+            margin-top: 15px;
+            height: 345px;
+            background: #fff;
+           
+
+            li {
+                height: 98px;
+                margin-left: 30px;
+                margin-right: 30px;
+                // margin-top: 18px;
+
+
+                .b1 {
+                    height: 25px;
+                    width: 100%;
+                    font-size: 10px;
+                    line-height: 25px;
+                    color: #303030;
+                    border-bottom: 1px solid #ebebeb;
+
+                    .b2 {
+                        width: 45px;
+                        height: 100%;
+                        border-top: 2px solid #e67e22;
+                    }
+                }
+
+                .b3 {
+                    font-size: 6px;
+                    color: #505050;
+                    margin-top: 14px;
+
+                    .b4 {
+                        font-size: 5px;
+                        color: #505050;
+                    }
+                }
+
+                .b5,
+                .b6 {
+                    font-size: 6px;
+                    color: #e67e22;
+                    margin-top: 10px;
+                }
+
+            }
+
+            .bb {
+                // width: 100%;
+                height: 65px;
+
+                .b7 {
+                    width: 140px;
+                    // height: 18px;
+                    font-size: 9px;
+                    color: #fff;
+                    margin-top: 10px;
+                    border: 1px solid #e67e22;
+                    background: #e67e22;
+                    text-align: center;
+                }
+            }
+
+           
+
+            .biaoqian {
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                margin: 0px 0px 35px;
+                padding: 11px 30px;
+
+                .top {
+                    height: 25px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin: 0px 0px 11px;
+                    padding: 0px 0px 7px;
+                    border-bottom: 1px solid #ccc;
+
+                    h3 {
+                        font-size: 10px;
+
+                    }
+                }
+
+                .bottom {
+                    // height: 125px;
+                    width: 100%;
+                    background: #fff;
+                    display: flex;
+                    // justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    a {
+                        height: 16px;
+                        display: block;
+                        text-align: center;
+                        box-sizing: border-box;
+                        margin: 0px 3px 3px 0px;
+                        padding: 1px 3px;
+                        line-height: 16px;
+                        font-size: 7px;
+                        color: #000;
+                        transition: all .1s ease-in;
+                        border: 1px solid #ebebeb;
+
+                        &:hover {
+                            background: #e67e22;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-1 {
+        // width: 100%;
+        height: 225px;
+        background: orange;
+        display:flex;
+        justify-content: center;
+        .list1{
+            width: 25%;
+            background: olive;
+        }
+        .list2{
+            width: 25%;
+            background: palegreen;
+        }
+        .list3{
+            width: 25%;
+            background: blue;
+        }
+    }
+}

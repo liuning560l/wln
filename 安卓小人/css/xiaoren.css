@@ -1,0 +1,97 @@
+#xiaoren{
+    width: 524px;
+    height: 512px;
+    background: #cccccc;
+    margin: 50px auto;
+    padding-top: 6px;
+}
+#xiaoren .box{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ff0000;
+    margin: auto;
+    position: relative;
+   
+}
+#xiaoren .box .box1{
+    width: 200px;
+    height: 100px;
+    background: #51a251;
+    border-radius:50% 50% 0px 0px/100% 100% 0px 0px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+   
+   
+}
+#xiaoren .box .box1 .yuan{
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-left: 50px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    float: left;
+}
+#xiaoren .box .box1 .a{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 20px;
+    /* float: left; */
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+#xiaoren .box .box2{
+    width: 200px;
+    height: 230px;
+    background: #51a251;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 0px 0px 16px 16px;
+}
+#xiaoren .box .box3{
+    width: 30px;
+    height: 180px;
+    background: #51a251;
+    border-radius: 6px;
+    float: left;
+    position: absolute;
+    top: 140px;
+    left: 110px;
+}
+#xiaoren .box .box4{
+   top: 140px;
+   right: 110px;
+   width: 30px;
+   height: 180px;
+   background: #51a251;
+   border-radius: 6px;
+   float: left;
+   position: absolute;
+}
+#xiaoren .box .box5{
+    width: 30px;
+    height: 80px;
+    background: #51a251;
+    border-radius: 0px 0px 11px 11px;
+    float: left;
+    position: absolute;
+    top: 360px;
+    right: 190px;
+}
+#xiaoren .box .box6{
+    width: 30px;
+    height: 80px;
+    background: #51a251;
+    border-radius: 0px 0px 11px 11px;
+    float: left;
+    position: absolute;
+    top: 360px;
+   left: 190px;
+}
