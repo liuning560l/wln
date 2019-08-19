@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+
+    header {
+        height: 2.266667rem;
+        background: #ffca4f;
+        // position: fixed;
+        // top: 0rem;
+        // left: 0rem;
+        // right: 0rem;
+
+        .tou {
+            height: 1.066667rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 0rem .333333rem 0rem .306667rem;
+
+            h2 {
+                font-size: .386667rem;
+                color: #000000;
+                margin-left: .133333rem;
+            }
+
+            .box {
+                text-align: right;
+                position: absolute;
+                top: .28rem;
+                right: 1.8rem;
+                margin-right: .133333rem;
+
+                h3 {
+                    font-size: .266667rem;
+                    color: #3e3b33;
+                }
+
+                h4 {
+                    font-size: .186667rem;
+                    color: #333333;
+                }
+            }
+
+            // span:nth-child(1){
+            //     flex: 8;
+            // }
+            // span:nth-child(2){
+            //     flex: 2;
+            // }
+            // span:nth-child(3){
+            //     flex: 2;
+            // }
+            span:nth-child(1) {
+                display: flex;
+            }
+
+            span:nth-child(2) {
+                display: flex;
+
+            }
+
+            span:nth-child(2) i {
+                position: absolute;
+                top: .226667rem;
+                right: 1.333333rem;
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+
+            .sousuo {
+                width: 9.466667rem;
+                height: .933333rem;
+                background: #fff;
+                border-radius: .04rem;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: .25rem;
+                    left: .32rem;
+                }
+
+                h3 {
+                    font-size: .346667rem;
+                    color: #aaa9a7;
+                    line-height: .933333rem;
+                    margin-left: .866667rem;
+                }
+            }
+        }
+    }
+
+    main {
+        flex: 1;
+        background: #fff;
+        position: relative;
+        .neirong {
+            position: relative;
+
+            .chuangkou{
+                width: 1.133333rem;
+                height: 1.6rem;
+                background: yellow;
+                position: fixed;
+                right: .266667rem;
+                bottom: 1.933333rem;
+                background-image: url(../images/1.png);
+                background-size: 1.133333rem 1.6rem;
+            }
+            .banner_tu {
+                height: 2.8rem;
+                width: 100%;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                .banner {
+                    width: 9.466667rem;
+                    height: 2.4rem;
+                    background-image: url(../images/images/banner_03.png);
+                    background-size: 9.466667rem 2.4rem;
+                }
+            }
+
+            .banner_1 {
+                height: 2.4rem;
+                width: 100%;
+                background-image: url(../images/images/banner_1_02.png);
+                background-size: 100% 100%;
+            }
+
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                height: 4.8rem;
+                position: relative;
+
+                .menu-1 {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    div {
+                        width: 1.16rem;
+                        height: 1.15rem;
+                        background-image: url(../images/images/jinglintu.png);
+                        background-size: 2.4rem auto;
+                    }
+
+                    .a {
+                        background-position: 0rem -1.2rem;
+                    }
+
+                    .b {
+                        background-position: 0rem -2.4rem;
+                    }
+
+                    .c {
+                        background-position: 0rem -3.533333rem;
+                    }
+
+                    .d {
+                        background-position: 0rem -4.733333rem;
+                    }
+
+                    .e {
+                        background-position: -1.2rem 0rem;
+                    }
+
+                    .f {
+                        background-position: -1.2rem -1.2rem;
+                    }
+
+                    .g {
+                        background-position: -1.2rem -2.4rem;
+                    }
+
+                    .h {
+                        background-position: -1.2rem -3.6rem;
+                    }
+
+                    .i {
+                        background-position: -1.2rem -4.8rem;
+                    }
+
+                    p {
+                        font-size: .306667rem;
+                        color: #010101;
+                        margin-top: .2rem;
+                    }
+                }
+
+                .xian {
+                    width: .933333rem;
+                    height: .08rem;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: 0rem;
+                    left: 45%;
+
+                    .gundong {
+                        width: .4rem;
+                        height: .08rem;
+                        background: #ffd161;
+                        border-radius: .026667rem;
+                    }
+
+                    .gundong:nth-child(2) {
+                        background: #e4e4e4;
+                    }
+                }
+
+            }
+
+            .list1 {
+                height: 1.866667rem;
+                display: flex;
+                justify-content: space-around;
+                padding: 0rem .266667rem;
+                box-sizing: border-box;
+
+                h2 {
+                    font-size: .493333rem;
+                    color: #000000;
+                    flex: 1;
+                    font-weight: bold;
+                    margin-top: 0.966667rem;
+                }
+
+                .yuan {
+                    width: 1.146667rem;
+                    height: 1.146667rem;
+                    border: .026667rem solid #c4c4c4;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: .266667rem;
+                    top: 9.993333rem;
+                    flex: 1;
+                    margin-top: .166667rem;
+
+                    i {
+                        position: absolute;
+                        top: .333333rem;
+                        left: .34rem;
+                    }
+                }
+            }
+
+            .tu {
+                height: 2.933333rem;
+                display: flex;
+                justify-content: space-around;
+                margin-top: .266667rem;
+
+                .tu-1 {
+                    img {
+                        height: 2.933333rem;
+                    }
+                }
+
+                .tu-2 {
+                    img {
+                        height: 2.933333rem;
+                    }
+                }
+            }
+
+            .box {
+                width: 100%;
+                height: 2.933333rem;
+                display: flex;
+                justify-content: space-around;
+                margin-top: .133333rem;
+
+                .list-1 {
+                    height: 2.933333rem;
+                    width: 2.266667rem;
+                    background: #fef9fa;
+                    padding: .186667rem 0rem 0rem .146667rem;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    h3 {
+                        font-size: .346667rem;
+                        color: #000000;
+                    }
+
+                    h4 {
+                        font-size: .253333rem;
+                        color: #8d8c8b;
+                    }
+
+                    .tu1 {
+                        width: 1.813333rem;
+                        height: 1.44rem;
+                        position: absolute;
+                        bottom: 0rem;
+                        right: 0rem;
+                    }
+                }
+            }
+            .choose{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem .32rem 0rem .293333rem;
+                margin-top: .92rem;
+                h2{
+                    font-size: .493333rem;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                .more{
+                    font-size: .293333rem;
+                    color: #666666;
+                    i{
+                        font-size: .186667rem;
+                    }
+                }
+            }
+            .bottom-t{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: .306667rem;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                .ditu{
+                    width: 4.56rem;                   
+                   img{
+                       width: 4.56rem;
+                       height: 2.213333rem;
+                       display: block;
+                   }
+                   .dianjia{
+                       
+                       img{
+                        width: 1.066667rem;
+                        height: 1.066667rem;
+                        display: block;
+                        position: absolute;
+                        left: .533333rem;
+                        top: 1.693333rem;
+                       }
+                       .ee{
+                           position: absolute;
+                           left: 5.513333rem;
+                           top: 1.693333rem;
+                       }
+                       .ss{
+                        position: absolute;
+                         left: .533333rem;
+                         top: 5.466667rem;
+                     }
+                     .sisi{
+                         position: absolute;
+                         left: 5.513333rem;
+                         top: 5.466667rem;
+                     }
+                   }
+                   h2{
+                       margin-left: 1.466667rem;
+                       font-size: .346667rem;
+                       color: #333333;
+                       width: 2.933333rem;
+                       overflow: hidden;
+                       white-space: nowrap;
+                       text-overflow: ellipsis;
+                       margin-top: .133333rem;
+                   }
+                   p{
+                       font-size: .266667rem;
+                       color: #666666;
+                       margin-top: .213333rem;
+                       margin-left: .266667rem;
+                   }
+                }
+                .ditu:nth-of-type(3){
+                    margin-top: .466667rem;
+                }
+                .ditu:nth-of-type(4){
+                    margin-top: .466667rem;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        height: 1.306667rem;
+        background: #ebeaf2;
+        padding: .146667rem 0rem .08rem 0rem;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 0rem;
+        left: 0rem;
+        right:0rem;
+        .dibu {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .dibu-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #a8a7a5;
+
+                .dibu-2 {
+                    font-size: .266667rem;
+                    margin-top: .226667rem;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
