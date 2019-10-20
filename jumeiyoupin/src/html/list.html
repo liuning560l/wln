@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jumei.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/cebianlanjs.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+
+<body class="J_body_301" style="height: 100%;">
+    <div class="big">
+        <div class="search_filter_title">
+            <div class="search_filter_top">
+                <strong>在<span>腮红</span>中筛选 <label>（多选模式，每个属性最多可同时选5个选项）</label></strong>
+            </div>
+        </div>
+        <div class="search_filter">
+            <div class="filter_con">
+                <div class="filter_tit">品牌:</div>
+                <div class="filter_attrs" id="filter_brand">
+
+                    <div class="placeholder_line"></div>
+                    <div class="bottom_multi_selecteds">
+                        <label class="filter_tit_wide">已选品牌:</label>
+                        <div class="bms_container">
+                            <span style="display: none;" class="search_current_item">0</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn_fliter_expan" title="展开" style="display: inline;">展开</a>
+
+
+            </div>
+
+            <div class="filter_con">
+                <div class="filter_tit">
+                    <p class="filter_brand_span clearfix"><span class="filter_brand_span_keyword">腮红&nbsp;</span>下</p>
+                    <span>分类:</span>
+                </div>
+                <div class="filter_attrs" id="filter_cat" style="height: auto;">
+                    <ul>
+                        <li class="" title="腮红">
+                            <a name="442" id="item_1_442">腮红</a>
+                        </li>
+
+                    </ul>
+                    <div class="placeholder_line"></div>
+                    <div class="bottom_multi_selecteds">
+                        <label class="filter_tit_wide">已选分类:</label>
+                        <div class="bms_container">
+                            <span style="display: none;" class="search_current_item">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter_con">
+                <div class="filter_attrs" id="filter_fun" style="height: auto;">
+                    <ul>
+                        <li class="" title=""><a name="37" id="item_2_37">修饰</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">装扮</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">润唇</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">不易脱妆</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">定妆</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">持久</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">修容</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">遮瑕</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">丰唇</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">保湿</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">均匀肤色</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">滋润</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">紧致</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">蓬松</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">易卸妆</a></li>
+                        <li class="" title=""><a name="37" id="item_2_37">清爽</a></li>
+                        <li class="" title=""> <a name="26" id="item_2_26">舒缓</a> </li>
+                        <li class="" title=""> <a name="17" id="item_2_17">控油</a></li>
+                        <li class="" title=""> <a name="34" id="item_2_34">防水</a></li>
+                    </ul>
+                    <div class="placeholder_line"></div>
+                </div>
+            </div>
+
+            <div class="filter_con" style="border-bottom: none;">
+                <div class="filter_tit">价格:</div>
+                <div class="filter_attrs" id="filter_price" style="height: auto;">
+                    <ul>
+                        <li title=""><a name="0-69" id="item_3_0-69">0-69元</a></li>
+                        <li title=""><a name="0-69" id="item_3_0-69">70-189元</a></li>
+                        <li title=""><a name="0-69" id="item_3_0-69">190-309元</a></li>
+                        <li title=""><a name="0-69" id="item_3_0-69">310-429元</a></li>
+                        <li title=""><a name="0-69" id="item_3_0-69">430元以上</a></li>
+                    </ul>
+                    <div class="placeholder_line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="btn-class">
+            <span class="typeBtn">默认</span>
+            <span class="typeBtn">按照价格从高到低</span>
+            <span class="typeBtn">按照价格从低到高</span>
+        </div>
+        <ul class="box-list">
+        </ul>
+        <div id="page" class="page"></div>
+    </div>
+    <script src="../js/footer.js"></script>
+
+
+
+</body>
+
+</html>

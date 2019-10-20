@@ -1,0 +1,570 @@
+body {
+    font-size: 12px;
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#header_container {
+    min-width: 960px;
+    background: #fff;
+}
+
+#top_menu #top_nav,
+#logo {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 85px;
+}
+
+element.style {
+    background: url(https://f1.jmstatic.com/static_passport/dist/v1.0.137928/images/logo_new_v1.jpg) no-repeat top left;
+}
+
+#logo #home {
+    width: 360px;
+    height: 85px;
+    overflow: hidden;
+    float: left;
+    font-size: 0;
+    line-height: 0;
+}
+
+a {
+    color: #ed145b;
+    text-decoration: none;
+}
+
+#logo .header_logo_box {
+    display: inline-block;
+    padding-top: 35px;
+    float: right;
+}
+
+
+#logo a.top_link {
+    width: 110px;
+    height: 31px;
+    overflow: hidden;
+    margin-right: 24px;
+    float: right;
+}
+
+#logo a.top_link,
+#user_header #cart_box #cart,
+#btn_global_search,
+#footer_links .linksf .link_bottom_pic,
+#footer_links .linksg .link_bottom_pic {
+    background: url(../img/jlt-load.png) no-repeat top center transparent;
+}
+
+#logo a.credit {
+    background-position: 0 0;
+}
+
+#logo a.lightning {
+    background-position: 0 -64px;
+}
+
+#logo a.gild {
+    background-image: url(../img/gild.png);
+    width: 170px;
+}
+
+/* 验证码页的样式 */
+.sign {
+    line-height: 1.5;
+}
+
+.loginWrap {
+    height: 414px;
+    margin: 100px auto;
+    line-height: 1.5;
+    width: 965px;
+    margin-top: 50px;
+}
+
+.loginWrap.loginWrapVerify {
+    margin-bottom: 355px;
+}
+
+.loginBoardWrap {
+    width: 960px;
+    position: relative;
+}
+
+.loginImage {
+    background: url(../img/loginPic.jpg) no-repeat;
+    width: 960px;
+    height: 360px;
+    position: absolute;
+}
+
+.loginWrap .loginBord {
+    width: 300px;
+}
+
+.loginWrap .loginBord {
+    top: -10px;
+}
+
+/* @media (min-width: 0) */
+.loginWrap .loginBord {
+    border: 0;
+}
+
+.loginWrap .loginBord {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .075);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .075);
+    background: rgba(255, 255, 255, .85);
+    border: 1px solid #ededed;
+    position: absolute;
+    min-height: 400px;
+    padding: 0 23px;
+    width: 310px;
+    color: #333;
+    top: -65px;
+    right: 0;
+}
+
+.loginBord .loginTit {
+    margin-bottom: 15px;
+    line-height: 60px;
+    *zoom: 1;
+}
+
+.loginTit .tosignup {
+    color: #969696;
+    float: right;
+}
+
+.loginTit h1 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #e31256;
+}
+
+.sign h1 {
+    font-family: "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+strong {
+    font-weight: bold;
+}
+
+.radio_wrapper {
+    height: 30px;
+}
+
+.radio_wrapper span {
+    padding-right: 30px;
+}
+
+.sign input {
+    vertical-align: middle;
+    outline: none;
+}
+
+label {
+    cursor: default;
+}
+
+.loginWrap .verityWrap,
+.loginWrap .textbox_ui {
+    margin-bottom: 26px;
+}
+
+.sign .textbox_ui {
+    position: relative;
+    *zoom: 1;
+}
+
+.textbox_ui {
+    height: 44px;
+}
+
+#username,
+#login_password,
+#dynamic_mobile {
+    padding-left: 38px;
+    width: 252px;
+}
+
+.user input {
+    background-position: 5px 0;
+}
+
+.user input,
+.pass input {
+    padding-left: 38px;
+    width: 262px;
+}
+
+.textbox_ui input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #CFCFCF;
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 10px 8px;
+    line-height: 1.5;
+    font-size: 14px;
+    outline: 0;
+    height: auto;
+    width: 284px;
+}
+
+.user input,
+.pass input,
+.otherAccout i,
+.textbox_ui .valid,
+.textbox_ui .invalid i {
+    background-image: url(../img/sign.png);
+    background-repeat: no-repeat;
+}
+
+.textbox_ui .valid,
+.textbox_ui .invalid,
+.textbox_ui .loading,
+.textbox_ui .focus_text {
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+}
+
+.sign .dynamic_pass_wrap {
+    height: 44px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.sign .act,
+.sign .line {
+    font-size: 12px;
+    margin: 30px 0;
+    clear: both;
+    color: #333;
+}
+#current{
+    display: block;
+}
+
+.dynamic_pass input {
+    width: 88px;
+    display: inline-block;
+}
+
+.pass input {
+    background-position: 5px -50px;
+}
+
+.user input,
+.pass input {
+    padding-left: 38px;
+    /* width: 262px; */
+}
+
+/* .textbox_ui .invalid, .textbox_ui .focus_text {
+    word-break: keep-all;
+    white-space: nowrap;
+    margin-top: 4px;
+    color: #999;
+    top: 100%;
+    left: 0;
+}
+.textbox_ui .valid, .textbox_ui .invalid, .textbox_ui .loading, .textbox_ui .focus_text {
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+} */
+
+.phonecode {
+    background: #fcfcfc;
+    /* background: -webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#f2f2f2)); */
+    background: -webkit-linear-gradient(top, #fcfcfc, #f2f2f2);
+    background: -moz-linear-gradient(top, #fcfcfc, #f2f2f2);
+    background: -o-linear-gradient(top, #fcfcfc, #f2f2f2);
+    background: linear-gradient(to bottom, #fcfcfc, #f2f2f2);
+    border: 1px solid #d9d9d9;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 8px;
+    display: inline-block;
+    line-height: 41px;
+    height: 41px;
+    font-weight: 700;
+    color: #666;
+    text-align: center;
+    width: 132px;
+    position: absolute;
+    right: 32px;
+    top: 179px;
+}
+/* input{
+    outline: none;
+} */
+#getPhoneCode{
+    position: absolute;
+    right: 32px;
+    top: 180px; 
+}
+#shows{
+    position: absolute;
+    right: 32px;
+    top: 163px; 
+}
+strong {
+    font-weight: bold;
+}
+
+.sign form p {
+    margin: 10px 0;
+}
+.textbox_ui .valid, .textbox_ui .loading, .textbox_ui .invalid i {
+    margin-top: 9px;
+    margin-left: -25px;
+    height: 20px;
+    width: 20px;
+}
+.textbox_ui{
+    position: relative;
+}
+.textbox_ui .yuan{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+
+    /* margin-left: -25px;
+    margin-top: 10px; */
+}
+/* .textbox_ui .loading{
+
+} */
+.focus_text .default{
+    margin-top: 2px;
+}
+.invalid .msg{
+    margin-top: -14px;
+}
+.user input, .pass input, .otherAccout i, .textbox_ui .valid, .textbox_ui .invalid i {
+    background-image: url(../img/sign.png);
+    background-repeat: no-repeat;
+}
+.textbox_ui .valid {
+    background-position: 0 -125px;
+}
+/* .textbox_ui .safe {
+    position: relative;
+    line-height: 20px;
+    display: none;
+} */
+input[type=reset],
+input[type=submit],
+input[type=submit] {
+    border: 1px solid #F9477A;
+    display: inline-block;
+    font-family: inherit;
+    word-break: keep-all;
+    background: #F8296D;
+    white-space: nowrap;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 30px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+}
+.submit_btn{
+    border: 1px solid #F9477A;
+    display: inline-block;
+    font-family: inherit;
+    word-break: keep-all;
+    background: #F8296D;
+    white-space: nowrap;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    /* padding: 0 30px; */
+    height: 40px;
+    color: #fff;
+    border: 0;
+}
+.iconAccout div {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.iconAccout p {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 15px;
+}
+.iconAccout a {
+    text-indent: -9999px;
+    background-image: url(../img/icon_light.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 12px;
+    float: left;
+}
+.iconAccout .a1 {
+    background-position: 0 0;
+}
+.iconAccout .a2 {
+    background-position: -57px 0;
+}
+.iconAccout .a3 {
+    background-position: -114px 0;
+}
+.iconAccout .a4 {
+    background-position: -169px 0;
+}
+.iconAccout .a5 {
+    background-position: -224px 0;
+}
+.iconAccout span {
+    line-height: 30px;
+    position: relative;
+    left: -7px;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+}
+.iconAccout span i {
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    right: -21px;
+    top: 7px;
+    top: 5px\9;
+    /* _top: 7px; */
+    background-position: -274px -23px;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+.iconAccout span i {
+    background-image: url(../img/icon.jpg);
+    background-repeat: no-repeat;
+}
+#username, #login_password, #dynamic_mobile {
+    padding-left: 38px;
+    width: 252px;
+}
+
+.yanzheng{
+    width: 300px;
+    height: 32px;
+    background: rgb(243, 240, 240);
+    color: #9c9c9c;
+    position: relative;
+}
+.yanzheng .zheng{
+    text-align: center;
+    width: 40px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 0;
+    cursor: move;
+    background: #fff;
+    z-index: 2;
+}
+.yanzheng .huadong{
+    width: 260px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    left: 34px;
+    text-align: center;
+}
+p a{
+    /* float: right; */
+    color: #333;
+}
+.footer_white #footer_copyright {
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.footer_white #footer_copyright {
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+#footer_copyright {
+    line-height: 20px;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.footer_white #footer_copyright a {
+    color: #000;
+}
+#footer_copyright .footer_copy_con {
+    padding: 14px 0 18px;
+    line-height: 23px;
+}
+
+.tu{
+    width: 77%;
+    height: 54px;
+    /* text-align: left; */
+    /* float: left; */
+    /* margin: auto; */
+}
+#footer_copyright .footer_copy_logo {
+    width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/footer_btm_icon.png) no-repeat;
+}
+#footer_copyright .logo01 {
+    background-position: -504px 0;
+}
+#footer_copyright .logo02 {
+    background-position: -378px 0;
+}
+#footer_copyright .logo03 {
+    background-position: -252px 0;
+}
+#footer_copyright .logo04 {
+    background-position:  -126px 0;
+}
+.loginWrap {
+    margin-top: 120px;
+    margin-bottom: 70px;
+    height: 460px;
+    margin: 100px auto;
+    line-height: 1.5;
+    width: 965px;
+}
+.loginPic {
+    background: url(../img/signPic.jpg) no-repeat;
+    position: relative;
+    width: 960px;
+    height: 370px;
+    position: relative;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jumei.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/01-header.js"></script>
+</head>
+
+<body>
+    <div class="header header_wide_lv2">
+        <!--header top-->
+        <div class="header_top">
+            <div class="header_top_box">
+                <!--login-->
+                <ul class="header_top_left" id="headerTopLeft">
+                    <li>欢迎来到聚美！</li>
+                    <li><a href="http://127.0.0.1/1910/jumeiyoupin/src/html/loading.html">请登录</a></li>
+                    <li><a href="http://127.0.0.1/1910/jumeiyoupin/src/html/register.html" rel="nofollow">快速注册</a></li>
+                </ul>
+                <!--login end-->
+                <!--city choose-->
+                <div class="default-city fl">
+                    <span class="add-city-icons">
+                        送至<span class="add-default-city">&nbsp;</span>
+                        <s class="icon_arrow_down"></s>
+                        <i class="user-local-icon"></i>
+                    </span>
+                    <div class="header-city-list"></div>
+                </div>
+                <!--city choose end-->
+                <!--right list-->
+                <ul class="header_top_right" id="headerTopRight">
+                    <li><a href="">正品保证</a>
+                    </li>
+                    <li><a href="">订单查询</a></li>
+                    <li><a href=""><s class="icon_favorite"></s>收藏的品牌</a></li>
+                    <li class="item_ijumei">
+                        <a href="">我的聚美<s class="icon_arrow_down"></s></a>
+                        <i class="icon_arrow_back"></i>
+                        <div class="sub_nav"
+                            style="display: none; height: auto; overflow: visible; padding-top: 8px; margin-top: 0px; padding-bottom: 8px; margin-bottom: 0px;">
+                            <ul>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="" rel="nofollow">我的现金券</a>
+                                </li>
+                                <li><a href="">我的红包</a>
+                                </li>
+                                <li><a href="">我的余额</a></li>
+                                <li><a href="">我的提现退款</a></li>
+                                <li><a href="">我的收藏</a></li>
+                                <li><a href="">我的心愿单</a></li>
+                                <li><a href="">会员中心</a></li>
+                                <li><a href="">礼品卡兑换</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_mobile"><a href=""><span class="line"></span><s class="icon_mobile"></s>手机聚美</a>
+                    </li>
+                    <!--            <li class="item_koubei"><a href="-->
+                    <!--/?from=-->
+                    <!--_top_nav_fresh_koubei_tab_new"><s class="icon_koubei"></s>口碑中心</a></li>-->
+                    <li id="see_more">
+                        <span class="line"></span>
+                        <!--查看更多 (广告位) star-->
+                        <!-- 查看分类(广告位) end  -->
+                    </li>
+                    <li class="item_more">
+                        <a href="">更多<s class="icon_arrow icon_arrow_down"></s></a>
+                        <i class="icon_arrow_back"></i>
+                        <div class="sub_nav"
+                            style="display: none; height: auto; padding-top: 8px; margin-top: 0px; padding-bottom: 8px; margin-bottom: 0px; overflow: visible;">
+                            <ul>
+                                <li><a href="" target="_blank">邀请好友</a></li>
+                                <li><a href="" id="bookmark_us"><span class="bottomline">加入收藏</span></a></li>
+                                <li><a href="" class="er_box" rel="nofollow" target="_blank">新浪微博<span
+                                            style="display: none;"><img
+                                                src="http://p0.jmstatic.com/templates/jumei/images/sina_er.png"></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)" class="er_box" rel="nofollow">聚美微信<span
+                                            style="display: none;"><img src=""></span></a></li>
+                                <li><a href="" class="er_box" target="_blank">百度贴吧</a></li>
+                                <li><a href="" class="er_box" rel="nofollow" target="_blank">腾讯微博<span
+                                            style="display: none;"><img src=""></span></a>
+                                </li>
+                                <li><a href="" class="er_box" rel="nofollow" target="_blank">人人公众主页<span
+                                            style="display: none;"><img src=""></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!--right list end-->
+            </div>
+        </div>
+        <!--header top end-->
+        <!--header middle-->
+        <div class="header_center">
+            <h1 class="logo"><a href="" id="home" title="聚美优品"
+                    style="background:url(http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg) no-repeat top left;">化妆品品牌排行榜大全网站聚美优品</a>
+            </h1>
+            <!-- 活动、节日入口广告位 -->
+            <!-- 活动、节日入口广告位 end -->
+            <div class="header_searchbox header_out_searchbox">
+                <form action="http://search.jumei.com" method="get" pos="top"
+                    onsubmit="return mall_search_validate(this)">
+                    <input name="filter" type="hidden" value="0-11-1">
+                    <input name="search" type="text" class="header_search_input" id="header_search_input" default_val=""
+                        autocomplete="off" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh">
+                    <input name="from" type="hidden">
+                    <input name="cat" type="hidden">
+                    <button type="submit" class="header_search_btn">搜索</button>
+                </form>
+                <div class="search_result_pop_a" id="top_out_search_pop_div"></div>
+
+                <ul class="hot_word">
+                    <li><a href="" target="_blank">保湿</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">面膜</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">洗面奶</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">补水</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">香水</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">眼霜</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">口红</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">护肤套装</a><s class="line"></s></li>
+                    <li><a target="_blank" href="">BB霜</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="cart_box" class="cart_box">
+                <a id="cart" class="cart_link" href="" rel="nofollow">
+                    <img src="http://p0.jmstatic.com/assets/cart.gif" width="28" height="28" class="cart_gif">
+                    <span class="text">去购物车结算</span>
+                    <span class="num" style="display: none;"></span>
+                    <s class="icon_arrow_right"></s>
+                </a>
+
+                <div class="cart_content" id="cart_content">
+                    <i class="cart-icons"></i>
+                    <div class="cart_content_zero">购物车中还没有商品，<br>快去挑选心爱的商品吧！</div>
+                    <div class="cart_content_all">
+                        <div class="cart_left_time">已超过购物车商品保留时间，请尽快结算。</div>
+                        <div class="cart_content_center"></div>
+                        <div class="con_all">
+                            <div class="price_whole"><span>共<span class="num_all"></span>件商品</span></div>
+                            <div><span class="price_gongji">共计<em>￥</em><span class="total_price">69</span></span><a
+                                    href="" class="cart_btn" rel="nofollow">去购物车结算</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header middle end-->
+        <!--header bottom-->
+        <div class="header_bottom">
+            <div class="channel_nav_box">
+                <div class="channel_nav_list_wrap">
+
+                    <ul class="channel_nav_list">
+                        <li><a href="" class="home">首页</a></li>
+                        <li class="haitao_li"><a href="">极速免税店</a></li>
+                        <li class=""><a href="">母婴特卖</a></li>
+                        <li class="current"><a href="">美妆商城<b></b></a>
+                            <div class="header_pop_subAtc box-shadow" id="header_pop_subAct" style="display: none;">
+                                    <div class="mz_imglist">
+                                        <a target="_blank" href=""><img
+                                                src="http://p0.jmstatic.com/banner/3481/30573_254_135_003-web.jpg"></a>
+                                        <a target="_blank" href=""><img
+                                                src="http://p0.jmstatic.com/banner/3481/30573_254_135_005-web.jpg"></a>
+                                    </div>
+                                    <div class="mz_inner clearfix">
+                                        <dl style="border-left:none">
+                                            <dt class="item_int png"><a> 国际大牌</a></dt>
+                                            <dd><a href="" target="_blank">兰蔻</a></dd>
+                                            <dd><a href="" target="_blank">娇韵诗</a></dd>
+                                            <dd><a href="" target="_blank">伊丽莎白雅顿</a></dd>
+                                            <dd><a href="" target="_blank">雅诗兰黛</a></dd>
+                                            <dd><a href="" target="_blank">欧莱雅</a></dd>
+                                            <dd><a href="" target="_blank">兰芝</a></dd>
+                                            <dd><a href="" target="_blank">倩碧</a></dd>
+            
+                                            <dd><a href="" target="_blank">雅漾</a></dd>
+                                            <dd><a href="" target="_blank">菲诗小铺</a></dd>
+                                            <dd><a href="" target="_blank">悦诗风吟</a></dd>
+            
+                                        </dl>
+                                        <dl>
+                                            <dt class="item_hufu png"><a href="" target="_blank"> 护肤</a></dt>
+                                            <dd><a href="" target="_blank">洁面</a></dd>
+                                            <dd><a href="" target="_blank">爽肤水</a></dd>
+                                            <dd><a href="" target="_blank">精华</a></dd>
+                                            <dd><a href="" target="_blank">乳液</a></dd>
+                                            <dd><a href="" target="_blank">面霜</a></dd>
+                                            <dd><a href="" target="_blank">眼霜</a></dd>
+                                            <dd><a href="" target="_blank">面膜</a></dd>
+                                            <dd><a href="" target="_blank">护肤套装</a></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="item_caizhuang png"><a href="" target="_blank">彩妆</a></dt>
+                                            <dd><a href="" target="_blank">卸妆</a></dd>
+                                            <dd><a href="" target="_blank">BB霜</a></dd>
+                                            <dd><a href="" target="_blank">粉底液</a></dd>
+                                            <dd><a href="" target="_blank">粉饼</a></dd>
+                                            <dd><a href="" target="_blank">眼影</a></dd>
+                                            <dd><a href="" target="_blank">眼线笔</a></dd>
+                                            <dd><a href="" target="_blank">睫毛膏</a></dd>
+                                            <dd><a href="" target="_blank">眉笔</a></dd>
+                                            <dd><a href="" target="_blank">口红</a></dd>
+                                            <dd><a href="" target="_blank">腮红</a></dd>
+                                        </dl>
+                                        <dl style="border-bottom:none;border-left:none">
+                                            <dt class="item_xiangfen png"><a href="" target="_blank">香氛</a></dt>
+                                            <dd><a href="" target="_blank">女士香水</a></dd>
+                                            <dd><a href="" target="_blank">男士香水</a></dd>
+                                            <dd><a href="" target="_blank">中性香水</a></dd>
+                                            <dd><a href="" target="_blank">Q版香水</a></dd>
+                                            <dd><a href="" target="_blank">香水套装</a></dd>
+                                            <dd><a href="" target="_blank">精油</a></dd>
+                                        </dl>
+                                        <dl style="border-bottom:none">
+                                            <dt class="item_nanshi png"><a href="" target="_blank">男士专区</a></dt>
+                                            <dd><a href="" target="_blank">洁面</a></dd>
+                                            <dd><a href="" target="_blank">爽肤水</a></dd>
+                                            <dd><a href="" target="_blank">面霜</a></dd>
+                                            <dd><a href="" target="_blank">精华</a></dd>
+                                            <dd><a href="" target="_blank">护肤套装</a></dd>
+                                            <dd><a href="" target="_blank">洗发</a></dd>
+                                            <dd><a href="" target="_blank">沐浴</a></dd>
+                                        </dl>
+                                        <dl style="border-bottom:none">
+                                            <dt class="item_hot png"><a>热门搜索</a></dt>
+                                            <dd><a href="" target="_blank">面膜贴</a></dd>
+                                            <dd><a href="" target="_blank">洗面奶</a></dd>
+                                            <dd><a href="" target="_blank">唇膏</a></dd>
+                                            <dd><a href="" target="_blank">去黑头</a></dd>
+                                            <dd><a href="" target="_blank">祛斑</a></dd>
+                                            <dd><a href="" target="_blank">隔离</a></dd>
+                                            <dd><a href="" target="_blank">祛痘</a></dd>
+                                            <dd><a href="" target="_blank">去角质</a></dd>
+                                            <dd><a href="" target="_blank">指甲油</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class=""><a href="">国际轻奢</a></li>
+                        <li><a target="_blank" href="">服装运动</a></li>
+                        <li><a target="_blank" href="">鞋包配饰</a></li>
+                    </ul>
+                    
+                    <!-- <div class="header_pop_subAtc box-shadow" id="header_pop_subAct"></div> -->
+                    <!--导航icon 动画-->
+                    <ul id="icon_wrap" class="icon_Wrap">
+                        <li>
+                            <div class="divlist divlist01">
+                                <a href=""><span class=""></span> <b>品牌防伪码</b></a></div>
+                        </li>
+                        <li>
+                            <div class="divlist divlist03">
+                                <a href=""><span class="by"></span> <b>美妆满2件或299包邮</b></a></div>
+                        </li>
+                    </ul>
+                    <!--导航icon 动画 end-->
+                </div>
+            </div>
+        </div>
+        <!--header bottom end-->
+    </div>
+</body>
+
+</html>

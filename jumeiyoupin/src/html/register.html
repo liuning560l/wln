@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+
+<body>
+    <div id="header_container">
+        <div id="logo">
+            <a href="" id="home" title="聚美优品"
+                style="background:url(  https://f3.jmstatic.com/static_passport/dist/v1.0.137928/images/logo_new_v1.jpg ) no-repeat top left;">
+                化妆品品牌排行榜大全网站聚美优品 </a>
+            <div class="header_logo_box">
+                <a href="" rel="nofollow" class="top_link lightning" target="_blank"></a>
+                <a href="" rel="nofollow" class="top_link gild" target="_blank"></a>
+                <a href="" rel="nofollow" class="top_link credit" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign">
+        <div class="loginWrap">
+            <div class="loginPic ">
+                <a href="" target="_blank" class="signup_link"></a>
+                <div class="loginBord">
+                    <div class="loginTit">
+                        <div class="tosignup">已有帐号<a href="">在此登录</a>
+                        </div>
+                        <h1><strong>用户注册</strong></h1>
+                    </div>
+                    <form id="phone" method="post">
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="text" id="mobile" placeholder="手机号" value="">
+                                <div class="focus_text">请输入11位手机号码</div>
+                                <div class="invalid" style="display: block;">
+                                    <i></i>
+                                    <div class="msg" style="display: none;">您输入的手机号码格式有误，需为 11 位数字格式</div>
+                                </div>
+                                <i class="valid yuan" style="display: none;"></i>
+                                <i class="loading" style="display: none;"></i>
+                            </div>
+                        </div>
+                        <!-- <div class="line">
+                            <div class="textbox_ui">
+                                <input type="text" id="mobile" placeholder="手机号" value="">
+                                <div class="focus_text">请输入11位手机号码</div>
+                                <div class="invalid" style="display: none;">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                                <i class="valid"></i>
+                                <i class="loading"></i>
+                            </div>
+                        </div> -->
+                        <div class="line verityWrap imgVerifyWrap" data-required="no" style="display:none">
+                            <div class="textbox_ui">
+                                <input type="text" placeholder="验证码" id="verify_code" autocomplete="off">
+                                <div class="focus_text">按右图填写，不区分大小写</div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                            <span id="change_verify_code">
+                                <img src="/i/account/hash_code?from=signup">
+                                换一张
+                            </span>
+                        </div>
+                        <div class="line verityWrap">
+                            <div class="textbox_ui sms_verify_wrapper">
+                                <input type="text" id="mobile_verify" placeholder="短信校验码" autocomplete="off">
+                                <div class="focus_text">请输入6位短信校验码</div>
+                                <div class="hint"></div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                            <a href="javascript:;" id="shows" class="phonecode"
+                                data-verifytype="sms"><strong>获取短信校验码</strong></a>
+                        </div>
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="password" placeholder="密码" id="password" autocomplete="off">
+                                <div class="focus_text">
+                                    <p class="default">6-16个字符，建议使用字母加数字或符号组合</p>
+                                    <div class="safe" style="display: none;">
+                                        <div class="pw_isstrong clearfix">
+                                            <div class="pw_level pw_success" data-class="pw_weak" data-strength="weak">弱
+                                            </div>
+                                            <div class="pw_level pw_success" data-class="pw_normal"
+                                                data-strength="normal">中</div>
+                                            <div class="pw_level pw_success" data-class="pw_strong"
+                                                data-strength="strong" style="border-right:0;">强</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="valid"></i>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg">为了您的账号安全，密码长度只能在 6-16 个字符之间</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="password" id="password2" placeholder="重复密码" autocomplete="off">
+                                <div class="focus_text">请再次输入密码</div>
+                                <i class="valid"></i>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="act" style="margin-left: 0px;">
+                            <p>
+                                <input type="button" class="submit_btn" value="同意协议并注册" name="mobileCommit"
+                                    style="width: 100%;">
+                            </p>
+                            <p>
+                                <a href="" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美优品用户协议》</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美隐私权政策》</a>
+                            </p>
+                        </div>
+                        <br>
+                    </form>
+
+                    <div class="shadow_l"></div>
+                    <div class="shadow_r"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="footer_container" class="footer_white" style="padding-top:5px;background: none;border-top: none;">
+        <div class="footer_con" id="footer_copyright">
+            <p class="footer_copy_con">
+                Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 <br>
+                京公网安备 11010102001226 号 |京ICP证111033号 | 食品流通许可证SP1101051110165515（1-1）| 营业执照 | 公示制度
+            </p>
+            <p class="tu">
+                <a href="javascript:void(0)" class="footer_copy_logo logo01" rel="nofollow"></a>
+                <a href="" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+                <a href="javascript:void(0)" class="footer_copy_logo logo03" rel="nofollow"></a>
+                <a href="javascript:void(0)" class="footer_copy_logo logo04" rel="nofollow"></a>
+                <a href="" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+            </p>
+
+        </div>
+    </div>
+
+  
+</body>
+
+</html>
